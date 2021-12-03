@@ -8,14 +8,13 @@ function Calcular() {
     let p = Number(peso.value)
     let a = Number(altura.value)
     if (nome == 0 || p == 0 || a == 0) {
-        alert("[ERRO] Digitar valores noc campos abaixo primeiro")
+        alert("[ERRO] Digitar valores nos campos abaixo primeiro")
         
     }
     else {
         let  resultado = p/(a*a)
-        res.innerHTML = `${nome.value} seu imc é igual a ${resultado} \n` 
+        res.innerHTML = `${nome.value} seu imc é igual a ${resultado} \n`
         
-
         if(resultado<18.5){
             res.innerHTML+= "Abaixo do peso"
         }

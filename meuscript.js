@@ -13,7 +13,7 @@ function Calcular() {
     }
     else {
         let  resultado = p/(a*a)
-        res.innerHTML = `${nome.value} seu imc é igual a ${resultado} \n`
+        res.innerHTML = `${nome.value} seu imc é igual a ${resultado.toFixed(2)} \n`
         
         if(resultado<18.5){
             res.innerHTML+= "Abaixo do peso"
